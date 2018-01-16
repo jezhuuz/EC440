@@ -1,0 +1,7 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=61159DCE
+eax=00000000 ebx=0062CC9C ecx=0062CA00 edx=00000000 esi=612A2708 edi=0040309A
+ebp=00000000 esp=0062CA3C program=C:\cygwin\home\jzhuc\EC440\parser.exe, pid 8116, thread main
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
+End of stack trace

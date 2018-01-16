@@ -1,0 +1,33 @@
+440 - Operating Systems
+Project 5
+
+oopsies pls dnt read this lmao
+
+- a string text written to /dev/adder is interpreted as representing integer(s)
+	> a string may contain several integers separated by white space
+	> any characters that are not part of an integer or white space should raise an error
+
+- a read from /dev/adder returns a single string reprenting the sum of the ints written to /dev/adder since instantiated
+
+- may generate other error conditions (should be indicated in some way)
+
+driver should do something about multiple pending operations on the same device:
+	= Minimal Option: allow at most one reader and one writer to open the driver at the same time
+		*extra open beyond 1 read and 1 write should fail with error code
+		*value returned by read should be sum as of the time the driver was opened for that read
+
+	= Advanced Option: allow multiple opens for reading and write. 
+		*results should be consistent with model that the simultaneous pending operations completed in some order
+		*each read returns a value, the sum of all values whose writes have completed when the read started and some values whose writes have not yet completed before the read open call
+
+
+---- Project Milestones ----
+
+1) Instantiate your VM
+
+2) Compile and Run example kernel modules from class
+	- examples from class, hellomod, and chardev are in separate folders below ~ec4440/.....??? in the VM
+
+3) Create the adder device
+
+4) Demonstrate the adder device at the oral exam
